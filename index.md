@@ -3,8 +3,8 @@ layout: workshop      # DON'T CHANGE THIS.
 # More detailed instructions (including how to fill these variables for an
 # online workshop) are available at
 # https://carpentries.github.io/workshop-template/customization/index.html
-venue: "University of Edinburgh"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
-address: "online"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
+venue: "Medical Education Centre"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
+address: "The Medical Education Centre at the Western site is situated on the 3rd floor of the main Outpatients"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
 country: "gb"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the
 latitude: "55.962450227686006"        # decimal latitude of workshop venue (use https://www.latlong.net/)
@@ -69,10 +69,6 @@ Carpentries courses would prepare you:
 - [Genomics R intro]([https://datacarpentry.org/R-ecology-lesson/index.html](https://datacarpentry.org/genomics-r-intro/))
 
 
-
-**Ed-DaSH**
-
-Ed-DaSH is a **Da**ta **S**cience training programme for **H**ealth and Biosciences. The [team](https://edcarp.github.io/Ed-DaSH/ed_dash_team.html) has developed workshops using [The Carpentries](https://carpentries.org/) platform on the following topics. See [workshops](https://edcarp.github.io/Ed-DaSH/workshops.html) for dates and registration details. All workshops will be delivered remotely.
 
 <h2 id="general">General Information</h2>
 
@@ -425,7 +421,6 @@ please preview your site before committing, and make sure to run
 
 {% comment %}
 For online workshops, the section below provides:
-- installation instructions for the Zoom client
 - recommendations for setting up Learners' workspace so they can follow along
   the instructions and the videoconferencing
 
@@ -433,7 +428,7 @@ If you do not use Zoom for your online workshop, edit the file
 `_includes/install_instructions/videoconferencing.html`
 to include the relevant installation instrucctions.
 {% endcomment %}
-{% if online != "false" %}
+{% if online != "true" %}
 {% include install_instructions/videoconferencing.html %}
 {% endif %}
 
